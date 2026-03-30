@@ -46,16 +46,39 @@
     <div class="sh-bar"></div>
   </div>
 
-  <div class="g4">
+  <div class="g4 system-grid">
+
+    <!-- FEATURED SYSTEM -->
+    <div class="card feature am">
+      <div class="card-img-1">
+        <img src="/assets/imgs/build.jpg" alt="PC Build">
+      </div>
+
+      <span class="corner">SYSTEM</span>
+      <div class="c-tag" style="color:var(--amber)">CUSTOM BUILD</div>
+      <div class="c-name">AM5 Workstation</div>
+      <div class="c-div"></div>
+
+      <div class="sr"><span class="sk">Platform</span><span class="sv">AMD AM5</span></div>
+      <div class="sr"><span class="sk">Purpose</span><span class="sv">Gaming · Rendering</span></div>
+      <div class="sr"><span class="sk">Cooling</span><span class="sv">High Airflow Config</span></div>
+      <div class="sr">
+        <span class="sk">Full Specs</span>
+        <span class="sv">
+          <a href="https://uk.buildcores.com/builds/AWrwYocH5" target="_blank">View Build</a>
+        </span>
+      </div>
+    </div>
+
     <!-- CPU -->
     <div class="card">
       <span class="corner">COMPUTE</span>
       <div class="c-tag">CPU</div>
-      <div class="c-name">AMD Ryzen 7<br>7800X3D</div>
+      <div class="c-name">Ryzen 7<br>7800X3D</div>
       <div class="c-div"></div>
-      <div class="sr"><span class="sk">Cores / Threads</span><span class="sv">8C / 16T</span></div>
-      <div class="sr"><span class="sk">Base Clock</span><span class="sv">4.20 GHz</span></div>
-      <div class="sr"><span class="sk">L3 Cache</span><span class="sv">96 MB 3D V-Cache</span></div>
+      <div class="sr"><span class="sk">Cores</span><span class="sv">8C / 16T</span></div>
+      <div class="sr"><span class="sk">Clock</span><span class="sv">4.20 GHz</span></div>
+      <div class="sr"><span class="sk">Cache</span><span class="sv">96 MB 3D</span></div>
       <div class="sr"><span class="sk">Socket</span><span class="sv">AM5</span></div>
       <div class="sr"><span class="sk">TDP</span><span class="sv">120 W</span></div>
     </div>
@@ -64,13 +87,12 @@
     <div class="card am">
       <span class="corner">GRAPHICS</span>
       <div class="c-tag" style="color:var(--amber)">GPU</div>
-      <div class="c-name">XFX RX 9070 XT<br>RDNA 4</div>
+      <div class="c-name">RX 9070 XT<br>RDNA 4</div>
       <div class="c-div"></div>
-      <div class="sr"><span class="sk">VRAM</span><span class="sv">16 GB GDDR6</span></div>
-      <div class="sr"><span class="sk">Architecture</span><span class="sv">RDNA 4</span></div>
-      <div class="sr"><span class="sk">Memory Bus</span><span class="sv">256-bit</span></div>
-      <div class="sr"><span class="sk">API</span><span class="sv">DX12 Ultimate</span></div>
-      <div class="sr"><span class="sk">Display Out</span><span class="sv">3× DP 2.1 · 1× HDMI</span></div>
+      <div class="sr"><span class="sk">VRAM</span><span class="sv">16 GB</span></div>
+      <div class="sr"><span class="sk">Bus</span><span class="sv">256-bit</span></div>
+      <div class="sr"><span class="sk">API</span><span class="sv">DX12U</span></div>
+      <div class="sr"><span class="sk">Output</span><span class="sv">DP 2.1 · HDMI</span></div>
     </div>
 
     <!-- RAM -->
@@ -79,44 +101,46 @@
       <div class="c-tag">RAM</div>
       <div class="c-name">32 GB<br>DDR5-6000</div>
       <div class="c-div"></div>
-      <div class="sr"><span class="sk">Config</span><span class="sv">2 × 16 GB DIMM</span></div>
+      <div class="sr"><span class="sk">Config</span><span class="sv">2 × 16</span></div>
       <div class="sr"><span class="sk">Speed</span><span class="sv">6000 MT/s</span></div>
-      <div class="sr"><span class="sk">Slots Used</span><span class="sv">2 / 4</span></div>
-      <div class="sr"><span class="sk">Expandable to</span><span class="sv">64 GB ↑</span></div>
+      <div class="sr"><span class="sk">Slots</span><span class="sv">2 / 4</span></div>
+      <div class="sr"><span class="sk">Max</span><span class="sv">64 GB</span></div>
     </div>
 
-    <!-- Storage -->
+    <!-- STORAGE -->
     <div class="card am">
       <span class="corner">STORAGE</span>
-      <div class="c-tag" style="color:var(--amber)">STORAGE</div>
+      <div class="c-tag" style="color:var(--amber)">DRIVES</div>
       <div class="c-name">2 TB NVMe<br>+ 4 TB HDD</div>
       <div class="c-div"></div>
-      <div class="sr"><span class="sk">Primary</span><span class="sv">Samsung 990 Pro</span></div>
-      <div class="sr"><span class="sk">Interface</span><span class="sv">PCIe 4.0 M.2</span></div>
-      <div class="sr"><span class="sk">Secondary</span><span class="sv">Seagate 4 TB</span></div>
-      <div class="sr"><span class="sk">Spindle</span><span class="sv">7200 RPM</span></div>
+      <div class="sr"><span class="sk">Primary</span><span class="sv">990 Pro</span></div>
+      <div class="sr"><span class="sk">Interface</span><span class="sv">PCIe 4.0</span></div>
+      <div class="sr"><span class="sk">Secondary</span><span class="sv">4 TB HDD</span></div>
       <div class="sr"><span class="sk">Total</span><span class="sv">6 TB</span></div>
     </div>
 
-    <!-- PC Photo -->
-    <div class="card am">
-      <div class="card-img-1" style="display:block;"><img src="/assets/imgs/build.jpg" alt="PC Breakdown"></div>
-      <span class="corner">3D PC IMAGE</span>
-      <div class="c-tag" style="color:var(--amber)">COMPUTER RENDER</div>
-      <a href="https://uk.buildcores.com/builds/AWrwYocH5" class="c-name">PC Breakdown</a>
-    </div>
   </div>
 
-  <!-- Chassis bar -->
+  <!-- SYSTEM BAR -->
   <div class="chassis-bar">
     <div>
-      <div class="c-tag">CHASSIS · MOTHERBOARD</div>
-      <div class="c-name" style="margin-bottom:0;font-size:18px;">Antec C8 &nbsp;/&nbsp; Gigabyte B650 Eagle AX</div>
+      <div class="c-tag">CHASSIS · BOARD</div>
+      <div class="c-name" style="margin-bottom:0;font-size:18px;">
+        Antec C8 · Gigabyte B650 Eagle AX
+      </div>
     </div>
+
     <div class="chassis-right">
-      <div class="sr" style="gap:16px;border:none;padding:0"><span class="sk">Form Factor</span><span class="sv">Mid Tower ATX</span></div>
-      <div class="sr" style="gap:16px;border:none;padding:0"><span class="sk">Wi-Fi</span><span class="sv">Wi-Fi 6E</span></div>
-      <div class="sr" style="gap:16px;border:none;padding:0"><span class="sk">Status</span><span class="sv"><span class="dot"></span>&nbsp;ONLINE</span></div>
+      <div class="sr" style="gap:16px;border:none;padding:0">
+        <span class="sk">Form</span><span class="sv">ATX Mid Tower</span>
+      </div>
+      <div class="sr" style="gap:16px;border:none;padding:0">
+        <span class="sk">Wi-Fi</span><span class="sv">6E</span>
+      </div>
+      <div class="sr" style="gap:16px;border:none;padding:0">
+        <span class="sk">Status</span>
+        <span class="sv"><span class="dot"></span>&nbsp;ONLINE</span>
+      </div>
     </div>
   </div>
 </div>
