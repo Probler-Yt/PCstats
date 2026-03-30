@@ -3,7 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PROBLER'S LAB // SYSTEM OVERVIEW</title>
+
+<title>Probler's Lab — Battlestation &amp; Workshop</title>
+<meta name="description" content="Full system overview of Probler's lab — AMD Ryzen 7 7800X3D build, triple monitor setup, sim rig, Bambu Lab A1, and more. Based in Liverpool, UK.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Probler's Lab — Battlestation &amp; Workshop">
+<meta property="og:description" content="Full system overview of Probler's lab — AMD Ryzen 7 7800X3D build, triple monitor setup, sim rig, Bambu Lab A1, and more. Based in Liverpool, UK.">
+<meta property="og:image" content="https://probler.uk/assets/imgs/preview.png">
+<meta property="og:url" content="https://probler.uk">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Probler's Lab — Battlestation &amp; Workshop">
+<meta name="twitter:description" content="Full system overview of Probler's lab — AMD Ryzen 7 7800X3D build, triple monitor setup, sim rig, Bambu Lab A1, and more. Based in Liverpool, UK.">
+<meta name="twitter:image" content="https://probler.uk/assets/imgs/preview.jpg">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://probler.uk">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -14,7 +33,6 @@
 <header class="hero">
   <div class="hero-eyebrow">// SYSTEM.OVERVIEW — ALL NODES OPERATIONAL</div>
   <h1 class="hero-title">PROBLER'S<br><span class="glow">LAB</span></h1>
-  <!-- Hero image zone — set src to enable, remove style="display:none" if wrapper override needed -->
   <div class="hero-img"><img src="/assets/imgs/hero.png" alt="Lab hero image"></div>
   <div class="hero-sub">BATTLESTATION &nbsp;·&nbsp; WORKSHOP &nbsp;·&nbsp; SIM RIG &nbsp;·&nbsp; STUDIO</div>
   <div class="hero-stats">
@@ -46,101 +64,77 @@
     <div class="sh-bar"></div>
   </div>
 
-  <div class="g4 system-grid">
+  <div class="system-layout">
+    <!-- LEFT: PC image card -->
+    <div class="pc-img-card">
+      <img src="/assets/imgs/build.jpg" alt="PC Build — Antec C8">
+      <div class="pc-hud-label">ANTEC C8</div>
+      <a class="pc-hud-link" href="https://uk.buildcores.com/builds/AWrwYocH5" target="_blank" rel="noopener">VIEW IN 3D →</a>
+    </div>
 
-    <!-- FEATURED SYSTEM -->
-    <div class="card feature am">
-      <div class="card-img-1">
-        <img src="/assets/imgs/build.jpg" alt="PC Build">
+    <!-- RIGHT: 2×2 spec grid -->
+    <div class="system-specs">
+      <!-- CPU -->
+      <div class="card">
+        <span class="corner">COMPUTE</span>
+        <div class="c-tag">CPU</div>
+        <div class="c-name">Ryzen 7<br>7800X3D</div>
+        <div class="c-div"></div>
+        <div class="sr"><span class="sk">Cores</span><span class="sv">8C / 16T</span></div>
+        <div class="sr"><span class="sk">Clock</span><span class="sv">4.20 GHz</span></div>
+        <div class="sr"><span class="sk">Cache</span><span class="sv">96 MB 3D</span></div>
+        <div class="sr"><span class="sk">Socket</span><span class="sv">AM5</span></div>
+        <div class="sr"><span class="sk">TDP</span><span class="sv">120 W</span></div>
       </div>
 
-      <span class="corner">SYSTEM</span>
-      <div class="c-tag" style="color:var(--amber)">CUSTOM BUILD</div>
-      <div class="c-name">AM5 Workstation</div>
-      <div class="c-div"></div>
+      <!-- GPU -->
+      <div class="card am">
+        <span class="corner">GRAPHICS</span>
+        <div class="c-tag" style="color:var(--amber)">GPU</div>
+        <div class="c-name">RX 9070 XT<br>RDNA 4</div>
+        <div class="c-div"></div>
+        <div class="sr"><span class="sk">VRAM</span><span class="sv">16 GB</span></div>
+        <div class="sr"><span class="sk">Bus</span><span class="sv">256-bit</span></div>
+        <div class="sr"><span class="sk">API</span><span class="sv">DX12U</span></div>
+        <div class="sr"><span class="sk">Output</span><span class="sv">DP 2.1 · HDMI</span></div>
+      </div>
 
-      <div class="sr"><span class="sk">Platform</span><span class="sv">AMD AM5</span></div>
-      <div class="sr"><span class="sk">Purpose</span><span class="sv">Gaming · Rendering</span></div>
-      <div class="sr"><span class="sk">Cooling</span><span class="sv">High Airflow Config</span></div>
-      <div class="sr">
-        <span class="sk">Full Specs</span>
-        <span class="sv">
-          <a href="https://uk.buildcores.com/builds/AWrwYocH5" target="_blank">View Build</a>
-        </span>
+      <!-- RAM -->
+      <div class="card">
+        <span class="corner">MEMORY</span>
+        <div class="c-tag">RAM</div>
+        <div class="c-name">32 GB<br>DDR5-6000</div>
+        <div class="c-div"></div>
+        <div class="sr"><span class="sk">Config</span><span class="sv">2 × 16</span></div>
+        <div class="sr"><span class="sk">Speed</span><span class="sv">6000 MT/s</span></div>
+        <div class="sr"><span class="sk">Slots</span><span class="sv">2 / 4</span></div>
+        <div class="sr"><span class="sk">Max</span><span class="sv">64 GB</span></div>
+      </div>
+
+      <!-- STORAGE -->
+      <div class="card am">
+        <span class="corner">STORAGE</span>
+        <div class="c-tag" style="color:var(--amber)">DRIVES</div>
+        <div class="c-name">2 TB NVMe<br>+ 4 TB HDD</div>
+        <div class="c-div"></div>
+        <div class="sr"><span class="sk">Primary</span><span class="sv">990 Pro</span></div>
+        <div class="sr"><span class="sk">Interface</span><span class="sv">PCIe 4.0</span></div>
+        <div class="sr"><span class="sk">Secondary</span><span class="sv">4 TB HDD</span></div>
+        <div class="sr"><span class="sk">Total</span><span class="sv">6 TB</span></div>
       </div>
     </div>
-
-    <!-- CPU -->
-    <div class="card">
-      <span class="corner">COMPUTE</span>
-      <div class="c-tag">CPU</div>
-      <div class="c-name">Ryzen 7<br>7800X3D</div>
-      <div class="c-div"></div>
-      <div class="sr"><span class="sk">Cores</span><span class="sv">8C / 16T</span></div>
-      <div class="sr"><span class="sk">Clock</span><span class="sv">4.20 GHz</span></div>
-      <div class="sr"><span class="sk">Cache</span><span class="sv">96 MB 3D</span></div>
-      <div class="sr"><span class="sk">Socket</span><span class="sv">AM5</span></div>
-      <div class="sr"><span class="sk">TDP</span><span class="sv">120 W</span></div>
-    </div>
-
-    <!-- GPU -->
-    <div class="card am">
-      <span class="corner">GRAPHICS</span>
-      <div class="c-tag" style="color:var(--amber)">GPU</div>
-      <div class="c-name">RX 9070 XT<br>RDNA 4</div>
-      <div class="c-div"></div>
-      <div class="sr"><span class="sk">VRAM</span><span class="sv">16 GB</span></div>
-      <div class="sr"><span class="sk">Bus</span><span class="sv">256-bit</span></div>
-      <div class="sr"><span class="sk">API</span><span class="sv">DX12U</span></div>
-      <div class="sr"><span class="sk">Output</span><span class="sv">DP 2.1 · HDMI</span></div>
-    </div>
-
-    <!-- RAM -->
-    <div class="card">
-      <span class="corner">MEMORY</span>
-      <div class="c-tag">RAM</div>
-      <div class="c-name">32 GB<br>DDR5-6000</div>
-      <div class="c-div"></div>
-      <div class="sr"><span class="sk">Config</span><span class="sv">2 × 16</span></div>
-      <div class="sr"><span class="sk">Speed</span><span class="sv">6000 MT/s</span></div>
-      <div class="sr"><span class="sk">Slots</span><span class="sv">2 / 4</span></div>
-      <div class="sr"><span class="sk">Max</span><span class="sv">64 GB</span></div>
-    </div>
-
-    <!-- STORAGE -->
-    <div class="card am">
-      <span class="corner">STORAGE</span>
-      <div class="c-tag" style="color:var(--amber)">DRIVES</div>
-      <div class="c-name">2 TB NVMe<br>+ 4 TB HDD</div>
-      <div class="c-div"></div>
-      <div class="sr"><span class="sk">Primary</span><span class="sv">990 Pro</span></div>
-      <div class="sr"><span class="sk">Interface</span><span class="sv">PCIe 4.0</span></div>
-      <div class="sr"><span class="sk">Secondary</span><span class="sv">4 TB HDD</span></div>
-      <div class="sr"><span class="sk">Total</span><span class="sv">6 TB</span></div>
-    </div>
-
   </div>
 
   <!-- SYSTEM BAR -->
   <div class="chassis-bar">
     <div>
       <div class="c-tag">CHASSIS · BOARD</div>
-      <div class="c-name" style="margin-bottom:0;font-size:18px;">
-        Antec C8 · Gigabyte B650 Eagle AX
-      </div>
+      <div class="c-name" style="margin-bottom:0;font-size:18px;">Antec C8 · Gigabyte B650 Eagle AX</div>
     </div>
-
     <div class="chassis-right">
-      <div class="sr" style="gap:16px;border:none;padding:0">
-        <span class="sk">Form</span><span class="sv">ATX Mid Tower</span>
-      </div>
-      <div class="sr" style="gap:16px;border:none;padding:0">
-        <span class="sk">Wi-Fi</span><span class="sv">6E</span>
-      </div>
-      <div class="sr" style="gap:16px;border:none;padding:0">
-        <span class="sk">Status</span>
-        <span class="sv"><span class="dot"></span>&nbsp;ONLINE</span>
-      </div>
+      <div class="sr" style="gap:16px;border:none;padding:0"><span class="sk">Form</span><span class="sv">ATX Mid Tower</span></div>
+      <div class="sr" style="gap:16px;border:none;padding:0"><span class="sk">Wi-Fi</span><span class="sv">6E</span></div>
+      <div class="sr" style="gap:16px;border:none;padding:0"><span class="sk">Status</span><span class="sv"><span class="dot"></span>&nbsp;ONLINE</span></div>
     </div>
   </div>
 </div>
@@ -155,9 +149,7 @@
     <div class="sh-bar"></div>
   </div>
 
-  <!-- Diagram -->
   <div class="mon-diagram">
-    <!-- Row 1: secondary on top, centered over primary -->
     <div class="mon-row">
       <div style="width:246px;"></div>
       <div>
@@ -170,8 +162,6 @@
       </div>
       <div style="width:94px;"></div>
     </div>
-
-    <!-- Row 2: primary + vertical -->
     <div class="mon-row">
       <div>
         <div class="mon primary">
@@ -248,7 +238,7 @@
       <div class="sr"><span class="sk">Switches</span><span class="sv">OmniPoint 2.0 Magnetic</span></div>
       <div class="sr"><span class="sk">Per-Key Display</span><span class="sv">OLED</span></div>
       <div class="sr"><span class="sk">Poll Rate</span><span class="sv">8000 Hz</span></div>
-      <div class="c-div" style="margin-top:16px;"></div>
+      <div class="c-div" style="margin-top:10px;"></div>
       <div class="sr"><span class="sk">Mouse</span><span class="sv">SteelSeries Aerox 5</span></div>
       <div class="sr"><span class="sk">Design</span><span class="sv">Honeycomb Lightweight</span></div>
       <div class="sr"><span class="sk">Buttons</span><span class="sv">5</span></div>
@@ -277,7 +267,7 @@
       <div class="c-name">DualSense ×3<br>+ Xbox Wireless</div>
       <div class="c-div"></div>
       <div class="sr"><span class="sk">PS5 DualSense</span><span class="sv">CUSTOM · HALL EFFECT MOD ×3</span></div>
-      <div class="c-div" style="margin-top:16px;"></div>
+      <div class="c-div" style="margin-top:10px;"></div>
       <div class="sr"><span class="sk">Xbox Wireless</span><span class="sv">Latest Gen</span></div>
       <div class="sr"><span class="sk">Bluetooth</span><span class="sv">5.2</span></div>
       <div class="sr"><span class="sk">Charging</span><span class="sv">USB-C</span></div>
@@ -340,7 +330,6 @@
   </div>
 
   <div class="g2">
-    <!-- Bambu -->
     <div class="card gr">
       <div class="card-img"><img src="assets/imgs/A1.png" alt="Bambu A1 printer"></div>
       <span class="corner">3D PRINTING</span>
@@ -355,7 +344,6 @@
       <div class="sr"><span class="sk">Layer Res.</span><span class="sv">50–350 μm</span></div>
     </div>
 
-    <!-- Tools placeholder -->
     <div class="card dash">
       <div class="c-tag" style="color:var(--dim)">TOOLS · WORKBENCH</div>
       <div class="c-name" style="color:var(--dim);margin-bottom:0;">Coming Soon</div>
@@ -394,27 +382,19 @@
       <div class="sr"><span class="sk">Stabilisation</span><span class="sv">Optical IS</span></div>
     </div>
 
-<div class="card am">
-  <div class="card-img"><img src="assets/imgs/toyrender4.png" alt="3D art"></div>
-  <span class="corner" style="color: var(--cyan);">CREATIVE</span>
-  <div class="c-tag" style="color:var(--cyan)">POST-PROCESSING</div>
-  <div class="c-name">3D ART · PHOTOGRAPHY</div>
-  <div class="c-div"></div>
-
-  <div class="sr"><span class="sk">Software</span><span class="sv">Blender · Photoshop</span></div>
-  <div class="sr"><span class="sk">Focus</span><span class="sv">3D Renders · Photo Edits</span></div>
-  <div class="sr"><span class="sk">Specialty</span><span class="sv">Vehicle Visualisation</span></div>
-  <div class="sr"><span class="sk">Output</span><span class="sv">Wallpapers · Cinematics</span></div>
-  <div class="sr"><span class="sk">Projects</span><span class="sv">Wallpaper Engine</span></div>
-<div class="sr">
-  <span class="sk">Portfolio</span>
-  <span class="sv">
-    <a href="https://www.instagram.com/the.mahjoub/" target="_blank" rel="noopener">
-      @the.mahjoub
-    </a>
-  </span>
-</div></div>
-    
+    <div class="card am">
+      <div class="card-img"><img src="assets/imgs/toyrender4.png" alt="3D art"></div>
+      <span class="corner" style="color:var(--cyan)">CREATIVE</span>
+      <div class="c-tag" style="color:var(--cyan)">POST-PROCESSING</div>
+      <div class="c-name">3D ART · PHOTOGRAPHY</div>
+      <div class="c-div"></div>
+      <div class="sr"><span class="sk">Software</span><span class="sv">Blender · Photoshop</span></div>
+      <div class="sr"><span class="sk">Focus</span><span class="sv">3D Renders · Photo Edits</span></div>
+      <div class="sr"><span class="sk">Specialty</span><span class="sv">Vehicle Visualisation</span></div>
+      <div class="sr"><span class="sk">Output</span><span class="sv">Wallpapers · Cinematics</span></div>
+      <div class="sr"><span class="sk">Projects</span><span class="sv">Wallpaper Engine</span></div>
+      <div class="sr"><span class="sk">Portfolio</span><span class="sv"><a href="https://www.instagram.com/the.mahjoub/" target="_blank" rel="noopener">@the.mahjoub</a></span></div>
+    </div>
   </div>
 </div>
 
@@ -441,35 +421,35 @@
       <div class="sr"><span class="sk">Status</span><span class="sv"><span class="dot"></span>&nbsp;ONLINE</span></div>
     </div>
 
-<div class="card gr">
-  <div class="card-img"><img src="assets/imgs/wled.png" alt="LED system"></div>
-  <span class="corner">SMART SETUP</span>
-  <div class="c-tag" style="color:var(--green)">DIY LED SYSTEM</div>
-  <div class="c-name">Custom Ambient Build</div>
-  <div class="c-div"></div>
-<div class="sr"><span class="sk">Status</span><span class="sv"><span class="dot"></span>&nbsp;ACTIVE</span></div>
-  <div class="sr"><span class="sk">Controller</span><span class="sv">Arduino · WLED</span></div>
-  <div class="sr"><span class="sk">Lighting</span><span class="sv">Desk Strip · 2× Bambu Light-001</span></div>
-  <div class="sr"><span class="sk">Voice Control</span><span class="sv">Alexa Integrated</span></div>
-  <div class="sr"><span class="sk">Display Sync</span><span class="sv">Smart HDMI Switch (PS5/PC)</span></div>
-  <div class="sr"><span class="sk">Automation</span><span class="sv">Custom Button Robot</span></div>
-  <div class="sr"><span class="sk">Scenes</span><span class="sv">Desk · Gaming · Ambient Modes</span></div>
-</div>
+    <div class="card gr">
+      <div class="card-img"><img src="assets/imgs/wled.png" alt="LED system"></div>
+      <span class="corner">SMART SETUP</span>
+      <div class="c-tag" style="color:var(--green)">DIY LED SYSTEM</div>
+      <div class="c-name">Custom Ambient Build</div>
+      <div class="c-div"></div>
+      <div class="sr"><span class="sk">Status</span><span class="sv"><span class="dot"></span>&nbsp;ACTIVE</span></div>
+      <div class="sr"><span class="sk">Controller</span><span class="sv">Arduino · WLED</span></div>
+      <div class="sr"><span class="sk">Lighting</span><span class="sv">Desk Strip · 2× Bambu Light-001</span></div>
+      <div class="sr"><span class="sk">Voice Control</span><span class="sv">Alexa Integrated</span></div>
+      <div class="sr"><span class="sk">Display Sync</span><span class="sv">Smart HDMI Switch (PS5/PC)</span></div>
+      <div class="sr"><span class="sk">Automation</span><span class="sv">Custom Button Robot</span></div>
+      <div class="sr"><span class="sk">Scenes</span><span class="sv">Desk · Gaming · Ambient Modes</span></div>
+    </div>
   </div>
 
   <!-- Footer -->
-  <div style="margin-top:114px;padding-top:42px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+  <div style="margin-top:68px;padding-top:32px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
     <div>
       <div style="font-family:'Orbitron',monospace;font-size:26px;font-weight:900;color:#fff;letter-spacing:-0.02em;">PROBLER</div>
       <div style="font-size:12px;color:var(--dim);margin-top:6px;letter-spacing:0.15em;">probler.uk &nbsp;·&nbsp; Liverpool, UK &nbsp;·&nbsp; Mech. Eng.</div>
     </div>
     <div style="text-align:right;">
-      <div style="font-size:10px;color:var();letter-spacing:0.2em;">SYSTEM OVERVIEW</div>
-      <div style="font-size:10px;color:var();letter-spacing:0.2em;margin-top:4px;">FEB 2026 — v1.0</div>
+      <div style="font-size:10px;color:var(--muted);letter-spacing:0.2em;">SYSTEM OVERVIEW</div>
+      <div style="font-size:10px;color:var(--muted);letter-spacing:0.2em;margin-top:4px;">FEB 2026 — v1.0</div>
     </div>
   </div>
 </div>
+
 <script src="script.js"></script>
-</body>
 </body>
 </html>
