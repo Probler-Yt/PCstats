@@ -50,6 +50,19 @@ body::after {
   opacity:0.5;
 }
 
+/* ── Link ── */
+.sv a {
+  color: var(--cyan); /* or whatever fits your theme */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sv a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+
 /* ── HERO ── */
 .hero {
   position:relative;
@@ -74,7 +87,7 @@ body::after {
 
 .hero-title {
   font-family:'Orbitron',monospace;
-  font-size: clamp(68px,12vw,170px);
+  font-size: clamp(68px,8vw,90px);
   font-weight:900;
   color:#fff;
   letter-spacing:-0.03em;
@@ -98,7 +111,7 @@ body::after {
 .hero-stats {
   display:flex;
   gap:0;
-  margin-top:68px;
+  margin-top:36px;
   animation: fadeUp .7s .3s ease both;
   flex-wrap:wrap;
   justify-content:center;
@@ -132,7 +145,7 @@ body::after {
   bottom:40px;
   left:50%;
   transform:translateX(-50%);
-  font-size:10px;
+  font-size:20px;
   letter-spacing:0.25em;
   color:var(--dim);
   animation: fadeUp .7s .55s ease both, bob 2s 1.5s ease infinite;
@@ -296,7 +309,7 @@ nav a:hover, nav a.active {
   top:17px;right:18px;
   font-size:10px;
   letter-spacing:0.15em;
-  color:var(--muted);
+  color:var(--c-accent,var(--cyan));
   font-style:italic;
 }
 
@@ -460,13 +473,55 @@ nav a:hover, nav a.active {
   pointer-events: none;
 }
 
+/* ── CARD IMAGE SLOT ── */
+.card-img-1 {
+  display: none; /* shown when img src is populated */
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+  margin: -28px -28px 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-img-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%) contrast(1.1) brightness(0.9);
+}
+
+/* scanline texture over image */
+.card-img-1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 3px,
+    rgba(0,0,0,0.18) 3px, rgba(0,0,0,0.18) 4px
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* cyan colour overlay */
+.card-img-1::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,240,255,0.12);
+  mix-blend-mode: color;
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* ── HERO IMAGE ZONE ── */
 .hero-img {
   display: none; /* shown when img src is populated */
   position: relative;
   width: 100%;
   max-width: 900px;
-  height: 280px;
+  height: 300px;
   overflow: hidden;
   margin: 28px 0;
   border-radius: 6px;
